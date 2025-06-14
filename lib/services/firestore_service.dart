@@ -232,33 +232,7 @@ class FirestoreService {
 
   // Add dummy customer data
   Future<void> addDummyCustomers() async {
-    final customers = [
-      {
-        'name': 'ansh',
-        'email': 'ansh@gmail.com',
-        'phone': '4545454454',
-      },
-      {
-        'name': 'Divit',
-        'email': 'idk',
-        'phone': 'idk',
-      },
-      {
-        'name': 'ishank',
-        'email': 'ishankkk',
-        'phone': '234234234',
-      },
-      {
-        'name': 'Sharnya',
-        'email': 'sgoel@gmai.com',
-        'phone': 'idk',
-      },
-      {
-        'name': 'Shreya',
-        'email': 'shreya@gmail.com',
-        'phone': '9876543210',
-      },
-    ];
+    final customers = [];
 
     for (var customer in customers) {
       await _db.collection('customers').add({

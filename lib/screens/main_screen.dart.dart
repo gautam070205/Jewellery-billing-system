@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:jwellery_billing/widgets/adminpanel.dart';
 
 import 'billing_screen.dart';
 
@@ -166,7 +165,7 @@ class _MainScreenState extends State<MainScreen> {
                   child: selectedIndex == 2
                       ? BillingScreen()
                       : selectedIndex == 4
-                          ? AdminPanel()
+                          ? _buildOtherScreens()
                           : _buildOtherScreens(),
                 ),
               ],
