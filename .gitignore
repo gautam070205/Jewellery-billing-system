@@ -69,6 +69,7 @@
 **/firestore.indexes.json
 **/firestore.rules
 **/storage.rules
+**/lib/firebase_options.dart
 **/firebase_options.dart.akk
 
 # Windows
